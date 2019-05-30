@@ -1,0 +1,20 @@
+<h1>Students</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Edad</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <% @students.each do |p| %>
+      <td><%= p.name %></td>
+      <td><%= p.age %></td>
+      <td><%= p.email %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
